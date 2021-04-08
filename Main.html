@@ -1,0 +1,649 @@
+<!doctype html>
+<html>
+    <title>Dipankar Barman</title>
+    <style type: "text/css">
+        body{
+            margin:0;
+            padding:0;
+            background-attachment: fixed;
+            background-image: url(background1.jpg);
+            background-size: 100% 100%;
+        }
+        p{
+            margin:0;
+            padding:0;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:activated{
+            color: red;
+        }
+        button{
+            background-color: transparent;
+            border-color: transparent;
+        }
+        #First-section {
+            color:white;
+            background-color:black;
+            position:;
+            object-position: center;
+            margin-top:0px;
+            padding: 0px;
+            text-align:center;
+            width:100%;
+            height: 30px;
+        }
+        #Second-section {
+            color:Black;
+            background-color:   transparent  ;
+            margin-top:0px;
+            padding-top: 0px;
+            width:100%;
+            height: 90px;
+        }
+        #Log{
+            color:Black;
+            background-color:transparent;
+            text-align:right;
+            float:right;
+            margin-top:5px;
+            padding-top:0px;
+            width:35%;
+            height:80px;
+        }
+        #logo{
+            margin-left: 45%;
+        }
+        #search{
+            float: right;
+            margin-top: -42px;
+            margin-right: 5%;
+        }
+        .cart{
+            margin-top: -56px;
+            margin-right: 15%;
+            float:right;
+        }
+        #Third-section {
+            color:Black;
+            background-color: transparent;
+            margin-top:15px;
+            padding: 0px;
+            width:100%;
+            height: 30px;
+        }
+        .menu{
+            margin-top: 0px;
+            font-size: 100%;    
+        }
+        #menu1{
+            float: left;
+            margin-left: 5%;    
+        }
+        #menu2{
+            float: left;
+            margin-left: 10%;    
+        }
+        #Content{
+            color:black;
+            text-align: center;
+            background-color:   transparent  ;
+            margin-left:0%;
+            margin-top:2px;
+            padding:0px;
+            width:100%;
+            height: 2100px;
+        }
+        #End{
+            color:white;
+            background-color:gray;
+            position:;
+            margin-top:2px;
+            padding: 0px;
+            width:100%;
+            height: 200px;
+        }
+        #End1{
+            color:black;
+            background-color:gray;
+            float:right;
+            margin-top:0px;
+            padding: 0px;
+            width:40%;
+            height: 200px;
+        }
+        #End2{
+            color:white;
+            background-color:gray;
+            float:right;
+            margin-top:0px;
+            padding: 0px;
+            width:50%;
+            height: 200px;
+        }
+        .log{
+            text-align: right;
+            color: skyblue;
+            font-weight: bold;
+            
+        }
+        .bold{
+            font-weight: bold;
+        }
+        .italic{
+            font-style: italic;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+    
+    
+    </style>
+    <body>
+        <div id="First-section">
+            <p>This Website is under construction, please visit us back after sometime.</p>
+        </div>
+        
+        <div id="Second-section">
+            <div id="logo">
+                <p> <img src="logo_new.png" width="120px" height="90px" align="left"></p>
+            </div>
+            <div id="Log">
+                <p style="margin-top: 40px"><button><img src="login_head.png" height="50px" width="50px"></button></p> 
+                <p class="cart"><button><img src="cart.png" height="50px" width="50px"></button></p>
+                <form>
+                    <p id="search"><input type="search" placeholder="Search"><input type="submit" value="Search"></p>
+                </form>
+            </div>              
+        </div>
+        <hr>
+        <div id="Third-section">
+            <div id="menu1">
+                <p><button class="menu">Lehengas</button></p> 
+            </div>
+            <div id="menu2">
+                <p><button class="menu">Sarees</button></p>  
+            </div>
+            <div id="menu2">
+                <p><button class="menu">Jackets</button></p>       
+            </div>
+            <div id="menu2">
+                <p><button class="menu">Kurta and Tunics</button></p>           
+            </div>
+            <div id="menu2">
+                <p><button class="menu">Dresses</button></p>               
+            </div>
+            <div id="menu2">
+                <p><button class="menu">Jumpsuits</button></p>          
+            </div>
+        </div>
+        <hr>
+        <style type="text/css">
+            #sub-content{
+                width:80%;
+                height: 300px;
+                margin: 50px;
+                border-style: solid;
+                margin-left: 130px
+            }
+            .Picture , Picture1 , Picture2 , Picture3 , Picture4 , Picture5{
+                margin-left: 0%;
+            }
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+            }
+            .text {
+                color: black;
+                background-color: transparent;
+                font-size: 20px;
+                width: 49.5%;
+                padding: 0px;
+                margin-top: 20px;
+                text-align: right;
+            }
+            .Number {
+                color: black;
+                font-size: 12px;
+                padding: 0px;
+                position: absolute;
+                top: 200 px;
+            }
+            #dot{
+                text-align: center;
+                background-color: transparent;
+                height: 0px;
+                margin-top: -10px;
+            }
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+            .active, .dot:hover {
+                background-color: #717171;
+            }
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+                    from {opacity: .4}
+                    to {opacity: 1}
+            }
+
+            @keyframes fade {
+                from {opacity: .4}
+            to {opacity: 1}
+            }
+        </style>
+        
+        <div id="Content">
+            <div id="sub-content">
+                <div class="Picture">
+                    <div class="Number">1/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div class="Picture">
+                    <div class="Number">2/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div class="Picture">
+                    <div class="Number">3/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div id="dot">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <script type="text/javascript">
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("Picture");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+           // Automatic Slideshow, Change image every 2 seconds
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("Picture");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 2000);
+            }
+        </script>
+            
+            <div id="sub-content">
+                <div class="Picture1">
+                    <div class="Number">1/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div class="Picture1">
+                    <div class="Number">2/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div class="Picture1">
+                    <div class="Number">3/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div id="dot">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <script type="text/javascript">
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("Picture1");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                }
+                // Automatic Slideshow, Change image every 2 seconds
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("Picture1");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}
+                    slides[slideIndex-1].style.display = "block";
+                    setTimeout(showSlides, 2000);
+                }
+            </script>
+            <div id="sub-content">
+                <div class="Picture2">
+                    <div class="Number">1/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div class="Picture2">
+                    <div class="Number">2/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div class="Picture2">
+                    <div class="Number">3/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div id="dot">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <script type="text/javascript">
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("Picture2");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+           // Automatic Slideshow, Change image every 2 seconds
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("Picture2");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 2000);
+            }
+        </script>
+            <div id="sub-content">
+                <div class="Picture3">
+                    <div class="Number">1/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div class="Picture3">
+                    <div class="Number">2/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div class="Picture3">
+                    <div class="Number">3/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div id="dot">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <script type="text/javascript">
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("Picture3");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+           // Automatic Slideshow, Change image every 2 seconds
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("Picture3");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 2000);
+            }
+        </script>
+            
+            <div id="sub-content">
+                <div class="Picture4">
+                    <div class="Number">1/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div class="Picture4">
+                    <div class="Number">2/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div class="Picture4">
+                    <div class="Number">3/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div id="dot">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <script type="text/javascript">
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("Picture4");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+           // Automatic Slideshow, Change image every 2 seconds
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("Picture4");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 2000);
+            }
+        </script>
+            <div id="sub-content">
+                <div class="Picture5">
+                    <div class="Number">1/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div class="Picture5">
+                    <div class="Number">2/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div class="Picture5">
+                    <div class="Number">3/3</div>
+                    <img src="sample_promo0.jpg" style="width: auto">
+                </div>
+                <div id="dot">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <script type="text/javascript">
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("Picture5");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+           // Automatic Slideshow, Change image every 2 seconds
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("Picture5");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 2000);
+            }
+        </script>
+        </div>
+    
+        <hr>
+        <div id="End">
+            <div id="End1">
+                <p><button>Order FAQ</button></p><br>
+                <p><button>Dipankar Barman Foundation</button></p><br>
+                <p><button>Terms & Condition</button></p><br>
+                <p><button>Privacy Policy</button></p><br>
+                <p><button>Return and Exchange Policy</button></p>
+            </div>
+            <div id="End2">
+                <p><b>Connect With Us</b></p><br>
+                <p><img src=""><a href="">Facebook</a></p><br>
+                <p><a href="">Instagram</a></p><br>
+                <p><a href="">Twitter</a></p><br>
+                <p><a href="">YouTube</a></p>
+            </div>
+        </div>
+            
+    </body>  
+</html>
